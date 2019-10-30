@@ -22,7 +22,13 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+body{
+   display: -webkit-flex;
+   display: flex;
 
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
 
 
 
@@ -31,7 +37,18 @@
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
-
+@media only screen and (max-width: 480px){
+   img{
+      width: 100%;
+   }
+   nav.horizontal{
+      -webkit-order: 99;
+      order: 99;
+   }
+   body > footer{
+      
+   }
+}
 
 
 
@@ -39,4 +56,12 @@
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+@media only screen and (min-width: 480px){
+   nav.horizontalul{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: nowrap;
+      flex-flow: nowrap;
 
+   }
+}
