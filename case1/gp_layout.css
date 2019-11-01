@@ -29,6 +29,12 @@ body{
    -webkit-flex-flow: row wrap;
    flex-flow: row wrap;
 }
+section#sheets{
+   -webkit-flex: 1 3 180px;
+   flex: 1 3 180px;
+}
+/* In this section, I added the flex layout and the section sheets./*
+
 
 
 
@@ -38,7 +44,7 @@ body{
    ============================================
 */
 @media only screen and (max-width: 480px){
-   img{
+   img.panel{
       width: 100%;
    }
    nav.horizontal{
@@ -46,9 +52,12 @@ body{
       order: 99;
    }
    body > footer{
+      -webkit-order: 100;
+      order: 100;
       
    }
 }
+/* In this section, I added the media only screen and the img panels, nav horizontal, and body footer.
 
 
 
@@ -57,11 +66,28 @@ body{
    ===================================================
 */
 @media only screen and (min-width: 480px){
-   nav.horizontalul{
+   nav.horizontal ul{
       display: -webkit-flex;
       display: flex;
       -webkit-flex-flow: nowrap;
       flex-flow: nowrap;
-
+      height: 40px;
+   }
+   nav.horizontal ul > li{
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+   }
+   img#panel.size1{
+      width: 100%;
+   }
+   img#panel.size2{
+      width: 60%;
+   }
+   img#panel.size3{
+      width: 40%;
+   }
+   img#panel.size4{
+      width: 30%;
    }
 }
+/* In this section, I added the layout and tablet screens./*
